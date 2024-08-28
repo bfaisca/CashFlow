@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CashFlow.Communication\CashFlow.Communication.csproj" />
+    <ProjectReference Include="..\ClashFlow.Application\ClashFlow.Application.csproj" />
+    <ProjectReference Include="..\ClashFlow.Exception\ClashFlow.Exception.csproj" />
+    <ProjectReference Include="..\ClashFlow.Infrastructure\ClashFlow.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
