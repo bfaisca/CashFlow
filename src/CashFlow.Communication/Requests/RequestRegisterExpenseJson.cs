@@ -3,7 +3,7 @@
 namespace CashFlow.Communication.Requests;
 public  class RequestRegisterExpenseJson
 {
-    public string TItle { get; set; } = String.Empty;
+    public string Title { get; set; } = String.Empty;
     public string Description { get; set; } = String.Empty;
     public DateTime Date { get; set; }
 
