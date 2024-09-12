@@ -1,12 +1,12 @@
-﻿using ClashFlow.Domain.Enums;
+﻿using CashFlow.Domain.Enums;
 
-namespace ClashFlow.Domain;
+namespace CashFlow.Domain.Entities;
 public class Expense
 {
-    public long Id { get; set; } 
+    public long Id { get; set; }
     public string Title { get; set; } = string.Empty;
     public string? Description { get; set; }
     public decimal Amount { get; set; }
-    public DateTime Date { get; set; }  
+    public DateTime Date { get; set; }
     public PaymentType PaymentType { get; set; }
 }

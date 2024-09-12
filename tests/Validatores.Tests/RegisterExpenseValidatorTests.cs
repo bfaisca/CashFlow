@@ -1,6 +1,6 @@
-﻿using CashFlow.Communication.Enums;
-using ClashFlow.Application.UseCases.Expenses.Register;
-using ClashFlow.Exception;
+﻿using CashFlow.Application.UseCases.Expenses.Register;
+using CashFlow.Communication.Enums;
+using CashFlow.Exception;
 using CommonTestUtilities.Requests;
 using FluentAssertions;
 
@@ -27,7 +27,7 @@ public class RegisterExpenseValidatorTests
         //Arrange
         var validator = new RegisterExpenseValidator();
         var request = RequestRegisterExpenseJsonBuilder.Build();
-        request.TItle = string.Empty;
+        request.Title = string.Empty;
 
         //Act
         var result = validator.Validate(request);

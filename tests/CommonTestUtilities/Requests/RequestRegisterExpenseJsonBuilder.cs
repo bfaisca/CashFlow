@@ -8,7 +8,7 @@ public class RequestRegisterExpenseJsonBuilder
     public static RequestRegisterExpenseJson Build()
     {
        return new Faker<RequestRegisterExpenseJson>()
-            .RuleFor(r => r.TItle, faker => faker.Commerce.ProductName())
+            .RuleFor(r => r.Title, faker => faker.Commerce.ProductName())
             .RuleFor(r => r.Description, faker => faker.Commerce.ProductDescription())
             .RuleFor(r => r.Date, faker => faker.Date.Past())
             .RuleFor(r => r.PaymentType, faker => faker.PickRandom<PaymentType>())

@@ -12,9 +12,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CashFlow.Communication\CashFlow.Communication.csproj" />
-    <ProjectReference Include="..\ClashFlow.Application\ClashFlow.Application.csproj" />
-    <ProjectReference Include="..\ClashFlow.Exception\ClashFlow.Exception.csproj" />
-    <ProjectReference Include="..\ClashFlow.Infrastructure\ClashFlow.Infrastructure.csproj" />
+    <ProjectReference Include="..\CashFlow.Application\CashFlow.Application.csproj" />
+    <ProjectReference Include="..\CashFlow.Domain\CashFlow.Domain.csproj" />
+    <ProjectReference Include="..\CashFlow.Exception\CashFlow.Exception.csproj" />
+    <ProjectReference Include="..\CashFlow.Infrastructure\CashFlow.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

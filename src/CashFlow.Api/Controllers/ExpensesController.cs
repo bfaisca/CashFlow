@@ -1,10 +1,6 @@
-﻿using CashFlow.Communication.Requests;
-using CashFlow.Communication.Responses;
-using ClashFlow.Application.UseCases.Expenses.Register;
-using ClashFlow.Exception.ExceptionBase;
+﻿using CashFlow.Application.UseCases.Expenses.Register;
+using CashFlow.Communication.Requests;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.TagHelpers;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CashFlow.Api.Controllers;
 [Route("api/[controller]")]
@@ -12,11 +8,10 @@ namespace CashFlow.Api.Controllers;
 public class ExpensesController : ControllerBase
 {
     [HttpPost]
-    public IActionResult Register([FromBody] RequestRegisterExpenseJson request)
+    public IActionResult Register([FromServices] IRegisterExpenseUseCase registerExpenseUse,
+                    [FromBody] RequestRegisterExpenseJson request)           
     {
-        var useCase = new RegisterExpenseUseCase();
-
-        var response = useCase.Execute(request);
+        var response = registerExpenseUse.Execute(request);
 
         return Created(string.Empty, response);
     }

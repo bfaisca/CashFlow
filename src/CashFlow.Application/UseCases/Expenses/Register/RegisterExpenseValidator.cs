@@ -1,14 +1,8 @@
 ﻿using CashFlow.Communication.Requests;
-using ClashFlow.Exception;
+using CashFlow.Exception;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.ObjectiveC;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ClashFlow.Application.UseCases.Expenses.Register;
+namespace CashFlow.Application.UseCases.Expenses.Register;
 public class RegisterExpenseValidator : AbstractValidator<RequestRegisterExpenseJson>
 {
     public RegisterExpenseValidator()

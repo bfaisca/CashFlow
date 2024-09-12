@@ -1,8 +1,8 @@
-﻿using ClashFlow.Domain;
+﻿using CashFlow.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClashFlow.Infrastructure.DataAccess;
-public class CashFlowDbContext : DbContext
+namespace CashFlow.Infrastructure.DataAccess;
+internal class CashFlowDbContext : DbContext
 {
     public DbSet<Expense> Expenses { get; set; }
 

@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClashFlow.Domain\ClashFlow.Domain.csproj" />
+    <ProjectReference Include="..\CashFlow.Domain\CashFlow.Domain.csproj" />
+    <ProjectReference Include="..\ClashFlow.Domain\CashFlow.Domain.csproj" />
   </ItemGroup>
 
 </Project>
